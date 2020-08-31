@@ -45,7 +45,7 @@ const Cards = () => {
                 </div>
             </div>
             <div className="card-footer">
-                <IoIosColorPalette className="icon" />
+                <IoIosColorPalette className="icon-color" />
                 {vehicles.map(vehicle => (
                     <p className="color-car">{vehicle.Color}</p>
                 ))}

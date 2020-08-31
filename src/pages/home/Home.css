@@ -1,9 +1,10 @@
-.container {
-    background-color: #f4f4f4;
-    min-height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-}
+    @import '../../components/style-root/Style-root.css';
+    .container {
+        background-color: var(--back-default);
+        min-height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }

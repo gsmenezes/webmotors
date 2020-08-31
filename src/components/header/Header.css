@@ -1,27 +1,80 @@
+@import '../style-root/Style-root.css';
 header {
     width: 100%;
-    height: 5%;
-    display: block;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    margin: 0px;
-    padding: 20px 15px;
+    margin: 30px auto 0px;
 }
 
-img {
-    width: 12%;
+.webmotors-logo {
+    width: 20%;
+}
+
+.btns {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5% auto 1%;
+    align-items: center;
+}
+
+.types-vehicle {
+    display: inline-flex;
+    width: 20%;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.vehicles {
+    width: 60px;
+    height: 30px;
+    stroke: var(--darker-gray);
+    fill: var(--darker-gray);
+}
+
+.types-text {
+    display: inline-grid;
+    gap: 2px;
+    vertical-align: sub;
+    text-align: center;
+}
+
+.text {
+    font-size: 12px;
+    color: var(--light-gray);
+}
+
+.vehicle-name {
+    font-size: 16px;
+    color: var(--darker-gray);
+}
+
+.vehicle-name:hover {
+    color: var(--darkred-webmotors);
+}
+
+.btn-sell {
+    text-align: center;
+    padding: 10px 40px;
+    color: var(--mostard);
+    background-color: transparent;
+    border: 2px solid var(--mostard);
+    border-radius: var(--rads-medium);
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.btn-sell:hover {
+    background-color: var(--mostard);
+    color: var(--white);
 }
 
 @media (max-width: 933px) {
-    img {
+    .webmotors-logo {
         width: 45%;
     }
 }
 
 @media (max-width: 360px) {
-    img {
+    .webmotors-logo {
         width: 50%;
     }
 }

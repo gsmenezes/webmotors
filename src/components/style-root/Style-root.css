@@ -1,0 +1,14 @@
+:root {
+    --white: #ffffff;
+    --back-default: #f4f4f4;
+    --mostard: #ebb462;
+    --red-webmotors: #cc2929;
+    --darkred-webmotors: #c80a2e;
+    --ligh: #dddd;
+    --light-gray: #7f7f7f;
+    --dark-gray: #646469;
+    --darker-gray: #2e2e37;
+    --rads-small: 2px;
+    --rads-medium: 4px;
+    --rads-big: 8px;
+}

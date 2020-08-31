@@ -1,3 +1,4 @@
+@import '../style-root/Style-root.css';
 main {
     background-color: #ffffff;
     border-radius: 4px;
@@ -7,7 +8,7 @@ main {
     max-height: 312px;
     max-height: 100%;
     padding: 20px 40px;
-    margin: 120px auto;
+    /* margin: 120px auto; */
     box-sizing: border-box;
     font-size: 14px;
     font-weight: 600;
@@ -97,7 +98,6 @@ select {
     padding: 0 40px 1px 16px;
     border: 2px solid #ecedf2;
     border-radius: 8px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #aeaeba;
     background: #ffffff no-repeat scroll;
@@ -111,7 +111,6 @@ select#version {
     padding: 0 40px 1px 16px;
     border: 2px solid #ecedf2;
     border-radius: 8px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #aeaeba;
     background: #ffffff no-repeat scroll;

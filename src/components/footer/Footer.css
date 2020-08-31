@@ -1,16 +1,15 @@
+@import '../style-root/Style-root.css';
 h5 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
     margin: 20px auto;
+    color: var(--light-gray);
+    font-size: 15px;
 }
 
 a {
     text-decoration-color: none;
     text-decoration-line: none;
-    color: black;
-    font-weight: 600;
+    color: var(--darker-gray);
 }
 
 @media (max-width: 360px) {

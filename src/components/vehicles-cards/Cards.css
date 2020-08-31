@@ -1,3 +1,4 @@
+@import '../style-root/Style-root.css';
 .cards-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -23,26 +24,22 @@
 }
 
 .card-content {
-    background-color: #FFFFFF;
-    border: 1px solid #dddd;
+    background-color: var(--white);
+    border: solid var(--ligh, --rads-small);
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 180px;
-    font-family: 'Poppins', sans-serif;
-    ;
 }
 
 .model-car {
-    font-size: 14px;
     color: rgb(46, 46, 55);
     font-weight: 700;
     margin-bottom: 5px;
 }
 
 .version-car {
-    font-size: 14px;
     color: rgb(139, 140, 153);
     font-weight: 700;
 }
@@ -73,7 +70,7 @@
     padding: 10px 15px;
 }
 
-.icon {
+.icon-color {
     fill: none;
     stroke: white;
     stroke-width: 2px;
