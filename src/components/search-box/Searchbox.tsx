@@ -54,8 +54,6 @@ const Searchbox = () => {
         window.location.reload();
     }
 
-
-
     return (
         <div className="content">
             <main>
