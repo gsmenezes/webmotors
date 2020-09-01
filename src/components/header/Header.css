@@ -23,6 +23,10 @@ header {
     cursor: pointer;
 }
 
+.types-button:hover {
+    border-bottom: 2px solid var(--darkred-webmotors);
+}
+
 .vehicles {
     width: 60px;
     height: 30px;

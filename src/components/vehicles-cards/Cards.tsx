@@ -15,41 +15,29 @@ const Cards = () => {
 
 
     return (
-
-        <div className="cards-group">
-            <div className="card-header">
-                {vehicles.map(vehicle => (
-                    <img className="car"src={vehicle.Image} alt="vehicle" />
-                ))}
-            </div>
-            <div className="card-content">
-                <div className="card-body">
-                    {vehicles.map(vehicle => (
-                        <h4 className="model-car">{vehicle.Model}</h4>
-                    ))}
-                    {vehicles.map(vehicle => (
-                        <p className="version-car">{vehicle.Version}</p>
-                    ))}
+        <div className="cards-grid">
+            {vehicles.map(vehicle => (
+                <div className="card-group">
+                    <div className="card-header">
+                        <img className="car" src={vehicle.Image} alt="vehicle" />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-body">
+                            <h4 className="model-car">{vehicle.Model}</h4>
+                            <p className="version-car">{vehicle.Version}</p>
+                        </div>
+                        <h1 className="price-car"> R$ {vehicle.Price}</h1>
+                        <div className="card-info">
+                            <p className="year-car">Modelo {vehicle.YearModel}</p>
+                            <p className="km-car">{vehicle.KM} km</p>
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <IoIosColorPalette className="icon-color" />
+                        <p className="color-car">{vehicle.Color}</p>
+                    </div>
                 </div>
-
-                {vehicles.map(vehicle => (
-                    <h1 className="price-car"> R$ {vehicle.Price}</h1>
-                ))}
-                <div className="card-body">
-                    {vehicles.map(vehicle => (
-                        <p className="year-car">{vehicle.YearModel}</p>
-                    ))}
-                    {vehicles.map(vehicle => (
-                        <p className="km-car">{vehicle.KM} km</p>
-                    ))}
-                </div>
-            </div>
-            <div className="card-footer">
-                <IoIosColorPalette className="icon-color" />
-                {vehicles.map(vehicle => (
-                    <p className="color-car">{vehicle.Color}</p>
-                ))}
-            </div>
+            ))}
         </div>
     )
 }
